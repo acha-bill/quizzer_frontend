@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "fontIcons";
+    src: url("./fontIcons.eot?3bf476cd55ed7638b32a67c6dd1b4a25?#iefix") format("embedded-opentype"),
+url("./fontIcons.woff2?3bf476cd55ed7638b32a67c6dd1b4a25") format("woff2"),
+url("./fontIcons.woff?3bf476cd55ed7638b32a67c6dd1b4a25") format("woff"),
+url("./fontIcons.ttf?3bf476cd55ed7638b32a67c6dd1b4a25") format("truetype"),
+url("./fontIcons.svg?3bf476cd55ed7638b32a67c6dd1b4a25#fontIcons") format("svg");
+}
+
+span[class^="icon-"]:before, span[class*=" icon-"]:before {
+    font-family: fontIcons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+    content: "\f101";
+}
