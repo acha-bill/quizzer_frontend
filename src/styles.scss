@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/theme/reset.scss';
+@import 'bootstrap/scss/bootstrap.scss';
+@import './assets/theme/variables.scss';
+@import './assets/theme/fonts.scss';
+@import './assets/theme/default.scss';
+
+.gradient-bg {
+  background: linear-gradient(to bottom, $primary-color, $black, $black)
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.input-group {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label {
+    font-size: .9em;
+    margin-bottom: 5px;
+  }
+
+  input {
+    color: $white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $secondary-color;
+    padding: 10px 0;
+    outline: none;
+    font-size: 1.2em;
+  }
+
+  input::placeholder {
+    color: $secondary-color;
+  }
+
+  & + & {
+    margin-top: 25px;
+  }
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+}
+
+.btn-round {
+  border-radius: 50px;
+}

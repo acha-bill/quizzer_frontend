@@ -1,0 +1,25 @@
+.questions-admin-page {
+  color: var(--white);
+
+  .content {
+    padding: 50px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .add-btn {
+    width: unset;
+  }
+
+  .sub-title {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+  }
+
+  .questions {
+    margin: 50px 0;
+  }
+}

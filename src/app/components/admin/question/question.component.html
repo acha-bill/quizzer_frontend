@@ -1,0 +1,15 @@
+<div class="admin-question row" *ngIf="!editing" [class.closed]="!expanded">
+  <div class="col-10" (click)="expanded = true">
+    <h3 class="label">{{question.label}}</h3>
+    <p class="answer-label" *ngIf="!expanded">{{ answerLabel }}</p>
+    <div *ngIf="expanded">
+      <h4 class="badge badge-pill badge-secondary" *ngFor="let answer of question.answers">{{answer.label}}</h4>
+    </div>
+  </div>
+  <div class="actions col-2">
+    <button class="btn btn-link">Edit</button>
+    <button type="button" class="close" aria-label="Close" *ngIf="expanded"  (click)="expanded = false">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>

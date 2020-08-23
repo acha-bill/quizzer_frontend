@@ -1,0 +1,13 @@
+<div class="gradient-bg full-height questions-admin-page">
+  <!-- MENU BAR WILL GO HERE -->
+  <div class="content container">
+    <h1 class="title d-flex justify-content-between align-items-center">
+      Questions
+      <button class="btn btn-outline-light btn-round add-btn">Add Question</button>
+    </h1>
+    <p class="sub-title">Manage the list of questions here</p>
+    <div class="questions">
+      <app-question *ngFor="let question of questions" [question]="question"></app-question>
+    </div>
+  </div>
+</div>
