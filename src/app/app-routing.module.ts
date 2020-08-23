@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/signup/signup.module').then(m => m.SignupModule),
   },
   {
+    path: 'categories',
+    loadChildren: () => import('./components/categories/categories.module').then(m => m.CategoriesModule),
+  },
+  {
     path: 'admin/questions',
     component: AdminQuestionsPage,
   },
@@ -21,7 +25,6 @@ const routes: Routes = [
     redirectTo: '/login'
   }
 ];
-
 
 @NgModule({
   imports: [
