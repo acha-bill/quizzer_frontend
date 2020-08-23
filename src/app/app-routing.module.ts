@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 
+import { QuestionsComponent as AdminQuestionsPage } from './components/admin/questions/questions.component';
+
 const routes: Routes = [
   {
     path: 'login',
@@ -9,6 +11,10 @@ const routes: Routes = [
   {
     path: 'signup',
     loadChildren: () => import('./components/signup/signup.module').then(m => m.SignupModule),
+  },
+  {
+    path: 'admin/questions',
+    component: AdminQuestionsPage,
   },
   {
     path: '**',
