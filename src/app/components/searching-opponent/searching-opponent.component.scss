@@ -1,0 +1,45 @@
+@import '../../../assets/theme/variables.scss';
+
+.searching-opponent-page {
+  height: 100vh;
+  background: $background-theme;
+
+  .players-avatar-containers {
+    height: 55vh;
+
+    h4 {
+      margin-bottom: 5vh;
+    }
+    .player-avatar {
+      img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        display: block;
+        border: 5px solid $tertiary-color;
+      }
+
+      span {
+        display: block;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 600;
+        padding: 16px;
+        font-family: $font-family-montserrat;
+      }
+    }
+
+    .versus {
+      background: url('../../../assets/images/versus.png') no-repeat;
+      color: #ffffff;
+      text-align: center;
+      margin: auto;
+      width: 120px;
+      height: 135px;
+      background-size: contain;
+      background-position: center;
+      margin: 50px;
+    }
+  }
+}

@@ -17,6 +17,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/categories/categories.module').then(m => m.CategoriesModule),
   },
   {
+    path: 'searching-opponent/:categoryId',
+    loadChildren: () => import('./components/searching-opponent/searching-opponent.module').then(m => m.SearchingOpponentModule),
+  },
+  {
     path: 'admin/questions',
     component: AdminQuestionsPage,
   },
