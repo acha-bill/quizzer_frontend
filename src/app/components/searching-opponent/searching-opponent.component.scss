@@ -5,10 +5,15 @@
   background: $background-theme;
 
   .players-avatar-containers {
-    height: 55vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 
     h4 {
-      margin-bottom: 5vh;
+      flex: 0 1 100%;
+      margin-bottom: 20px;
+      font-size: 16px;
     }
     .player-avatar {
       img {

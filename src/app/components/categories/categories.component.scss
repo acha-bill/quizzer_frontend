@@ -5,18 +5,18 @@
   .categories-header {
     font-size: 22px;
   }
-  ul.categories-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 230px);
-    grid-gap: 64px 20px;
-    row-gap: 64px;
-    column-gap: 20px;
+  .categories-cards-container {
+    display: flex;
+    align-items: start;
+    flex-flow: row wrap;
 
-    li {
+
+    .category-card {
       height: 320px;
-      width: 230px;
+      max-width: 230px;
       background: #ffffff;
       border-radius: 5px;
+      margin: 0 20px 20px 20px;
 
       .category-img {
         img {
