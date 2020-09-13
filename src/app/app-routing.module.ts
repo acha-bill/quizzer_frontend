@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/searching-opponent/searching-opponent.module').then(m => m.SearchingOpponentModule),
   },
   {
+    path: 'quiz',
+    loadChildren: () => import('./components/quiz/quiz.module').then(m => m.QuizModule),
+  },
+  {
     path: 'admin/questions',
     component: AdminQuestionsPage,
   },

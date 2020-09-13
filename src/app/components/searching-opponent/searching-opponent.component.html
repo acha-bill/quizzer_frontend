@@ -1,6 +1,7 @@
 <div class="gradient-bg full-height">
+  <!-- <h4 class="text-center text-white pt-4">Searching Opponent ....</h4> -->
   <div class="searching-opponent-page d-flex align-items-center justify-content-center">
-    <div class="players-avatar-containers d-block ">
+    <div class="players-avatar-containers">
       <h4 class="text-center text-white">Searching Opponent ....</h4>
       <div class="d-inline-block player-avatar main-player animate__animated animate__pulse  animate__infinite	infinite">
         <img src="" alt="" src="../../../assets/images/user1.png">
@@ -8,7 +9,7 @@
       </div>
       <div class=" d-inline-block versus"></div>
       <div class="d-inline-block player-avatar second-player">
-        <img src="" alt="" src="../../../assets/images/{{placeHolderAvatar?.user_img}}.png">
+        <img *ngIf="placeHolderAvatar" alt="" src="../../../assets/images/{{placeHolderAvatar?.user_img}}.png">
         <span>{{placeHolderAvatar?.user_name}}</span>
       </div>
     </div>
